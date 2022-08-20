@@ -1,0 +1,71 @@
+body{
+	background: #faf7f4;
+}
+
+/* 전체 영역 */
+.wrap{
+	max-width: 1024px;
+	width: 100%;
+	min-height: 1000px;
+	margin: 0 auto;
+}
+
+/* 메인 최상단 이미지 */
+.top_main_img{
+	width: 100%;
+	min-height: 80vh;
+	position: relative;
+	background-image: url("/img/top_main_img.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.invitation_wrap{
+	display: inline-block;
+	width: 100%;
+	height: 5000px;
+}
+
+.main_desc_1{
+	width: 100%;
+	padding: 20px 10px;
+}
+
+/* 기본 텍스트*/
+.text_1{
+	font-family: 'KyoboHand';
+	color: #282828;
+	font-size: 3.5em;
+	margin-bottom: 0.2em;
+}
+
+/* 안내 텍스트 */
+.text_2{
+	font-family: 'Pretendard-Regular';
+	color: #282828;
+	font-size: 3em;
+	margin-bottom: 0em;
+}
+
+.text_2 .text_min{
+	font-size: 0.5em;
+}
+
+/* 스크롤 내릴 때 상단 알림 */
+.top_fixed_alert{
+	line-height: 4em;
+	z-index: 10000;
+	padding: 2em 1em;
+	background: rgba(250, 247, 244, 0.95);
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	box-shadow: 1em 1em 1em #efefef;
+}
+
+.invitation_text{
+	line-height: 2.5em;
+}
