@@ -14,4 +14,9 @@ jQuery(function($){
 			// el_top_fixed_alert.css({opacity:0});
 		}
 	});
+
+	var swiper = new Swiper(".mySwiper", {
+		effect: "cards",
+		grabCursor: true,
+	});
 });

@@ -8,11 +8,13 @@
 	<meta property="og:description" content="우리의 새로운 시작을 축복해주세요 ❣❣❣" />
 	<meta property="og:image" content="https://eleninjaytech.github.io/invitation/ogimage.png" />
 
-	<link rel="stylesheet" href="./css/global.css?v=4">
-	<link rel="stylesheet" href="./css/index.css?v=4">
+	<link rel="stylesheet" href="./css/global.css?v=5">
+	<link rel="stylesheet" href="./css/index.css?v=5">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css?v=5">
 
 	<script src="./js/jquery-3.6.0.min.js"></script>
-	<script src="./js/index.js?v=4"></script>
+	<script src="./js/index.js?v=5"></script>
+	<script src="./js/swiper-bundle.min.js?v=5"></script>
 </head>
 <body>
 	<div class="wrap">
@@ -71,11 +73,58 @@
 					</div>
 
 					<div class="gallery_wrap">
-
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="./gallery/a1.png" target="_blank">
+										<img src="./gallery/a1.png" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="./gallery/a2.png" target="_blank">
+										<img src="./gallery/a2.png" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="./gallery/a3.png" target="_blank">
+										<img src="./gallery/a3.png" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="./gallery/a5.png" target="_blank">
+										<img src="./gallery/a5.png" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="./gallery/a6.png" target="_blank">
+										<img src="./gallery/a5.png" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 
 					<div class="map_wrap">
+						<!-- * 카카오맵 - 지도퍼가기 -->
+						<!-- 1. 지도 노드 -->
+						<div id="daumRoughmapContainer1661272038946" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 
+						<!--
+							2. 설치 스크립트
+							* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+						-->
+						<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+						<!-- 3. 실행 스크립트 -->
+						<script charset="UTF-8">
+							let b_w = $("body").width();
+							new daum.roughmap.Lander({
+								"timestamp" : "1661272038946",
+								"key" : "2bgvd",
+								"mapWidth" : b_w,
+								"mapHeight" : "500"
+							}).render();
+						</script>
 					</div>
 				</div>
 			</div>
