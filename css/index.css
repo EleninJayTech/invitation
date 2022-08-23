@@ -69,3 +69,42 @@ body{
 .invitation_text{
 	line-height: 2.5em;
 }
+
+.parent_name{
+	width: 29vw;
+	display: inline-block;
+}
+
+.name_center{
+	font-size: 0.8em;
+}
+
+.chode_img_wrap{
+	text-align: center;
+}
+
+.chode_img{
+	margin-left: 5%;
+	width: 90%;
+	display: inline-block;
+}
+
+.cal{
+	position: relative;
+	background: #e4efe2;
+	text-align: center;
+	padding: 3em 3em 10em;
+}
+.cal_img{
+	width: 95%;
+	display: inline-block;
+}
+
+.cal .text_1{
+	font-size: 5em;
+	width: 100%;
+	display: block;
+	position: absolute;
+	bottom: 4%;
+	left: 0;
+}
