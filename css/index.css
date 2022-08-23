@@ -111,6 +111,7 @@ body{
 
 /* 갤러리 */
 .gallery_wrap{
+	overflow: hidden;
 	width: 100%;
 }
 .swiper {
