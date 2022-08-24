@@ -181,4 +181,13 @@ body{
 .map_wrap{
 	overflow: hidden;
 	width: 100%;
+	text-align: center;
+}
+
+.in_map{
+	display: inline-block;
+}
+
+.os_mac .roughmap_maker_label .roughmap_lebel_text{
+	font-size: 2em !important;
 }
