@@ -17,7 +17,7 @@ body{
 	position: relative;
 	background-image: url("../img/top_main_img.jpg");
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
 }
