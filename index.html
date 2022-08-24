@@ -111,28 +111,19 @@
 
 					<div class="map_wrap">
 						<div class="in_map">
-							<!-- * 카카오맵 - 지도퍼가기 -->
-							<!-- 1. 지도 노드 -->
-							<div id="daumRoughmapContainer1661272038946" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-
-							<!--
-								2. 설치 스크립트
-								* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-							-->
-							<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-							<!-- 3. 실행 스크립트 -->
-							<script charset="UTF-8">
-								let b_w = $("body").width();
-								b_w = b_w * 0.8;
-								let b_h = b_w * 1.1;
-								new daum.roughmap.Lander({
-									"timestamp" : "1661272038946",
-									"key" : "2bgvd",
-									"mapWidth" : b_w,
-									"mapHeight" : b_h
-								}).render();
-							</script>
+							<div class="map_info_wrap">
+								<textarea id="copy_text" class="display_none">인천 서구 봉수대로 806</textarea>
+								<b class="title text_1">아시아드웨딩컨벤션 브릴리에 홀</b>
+								<p class="text_2">인천 서구 봉수대로 806</p>
+								<p class="text_2">032-765-6000</p>
+								<div class="copy_btn">
+									<img src="./img/copy.png" alt="">
+									<b class="copy_text">주소복사</b>
+								</div>
+							</div>
+							<a href="http://kko.to/-wstsfAXW" target="_blank">
+								<img src="./img/map2.png" alt="">
+							</a>
 						</div>
 					</div>
 				</div>

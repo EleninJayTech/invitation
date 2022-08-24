@@ -178,16 +178,41 @@ body{
 /*}*/
 
 /* 맵 지도 */
+.map_info_wrap{
+	padding: 2em;
+	text-align: left;
+	background: #faf7f4;
+	position: relative;
+}
+.map_info_wrap .text_2{
+	color: #606060;
+}
+.map_info_wrap .title{
+	padding-bottom: 0.1em;
+	float: left;
+	width: 100%;
+}
 .map_wrap{
 	overflow: hidden;
 	width: 100%;
 	text-align: center;
 }
-
 .in_map{
+	width: 80%;
 	display: inline-block;
 }
-
-.os_mac .roughmap_maker_label .roughmap_lebel_text{
-	font-size: 2em !important;
+.in_map img{
+	width: 100%;
+}
+.copy_btn{
+	text-align: center;
+	width: 10vw;
+	position: absolute;
+	right: 5em;
+	top: 4em;
+}
+.copy_text{
+	display: inline-block;
+	font-size: 1.7em;
+	text-align: center;
 }

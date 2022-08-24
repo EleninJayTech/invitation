@@ -15,8 +15,17 @@ jQuery(function($){
 		}
 	});
 
-	var swiper = new Swiper(".mySwiper", {
+	let swiper = new Swiper(".mySwiper", {
 		effect: "cards",
 		grabCursor: true,
+	});
+
+	$(".map_info_wrap").on('click', function(){
+		let content = document.getElementById('copy_text');
+
+		content.select();
+		document.execCommand('copy');
+
+		alert("주소가 복사 되었습니다.");
 	});
 });
