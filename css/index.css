@@ -33,7 +33,7 @@ html > body *{
 }
 
 .main_desc_1 .main_desc{
-	font-size: 1.5em;
+	font-size: 2.5em;
 }
 
 .main_desc_1{
@@ -75,8 +75,8 @@ html > body *{
 }
 
 .invitation_text{
-	line-height: 3.5em;
-	font-size: 1.5em;
+	line-height: 2.2em;
+	font-size: 2.2em;
 }
 
 .parent_name{
@@ -201,7 +201,7 @@ html > body *{
 	position: relative;
 }
 .map_info_wrap .text_2{
-	font-size: 1.5em;
+	font-size: 2em;
 	color: #606060;
 }
 .map_info_wrap .title{
@@ -226,7 +226,7 @@ html > body *{
 	width: 10vw;
 	position: absolute;
 	right: 5em;
-	top: 2em;
+	top: 1em;
 }
 .copy_text{
 	display: inline-block;
@@ -246,14 +246,14 @@ html > body *{
 	margin-bottom: 2.5vh;
 }
 .location_box b{
-	font-size: 1.3em;
+	font-size: 1.2em;
 	padding-bottom: 1vh;
 	display: inline-block;
 }
 .location_box p{
 	padding-left: 1vw;
 	/*margin-bottom: 0.5vh;*/
-	font-size: 0.4em;
+	font-size: 1em;
 }
 
 .footer_wrap{

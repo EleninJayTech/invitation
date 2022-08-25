@@ -1,7 +1,14 @@
 @charset "utf-8";
 body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select{margin: 0; padding: 0;}
 
-html{font-size: 16px;}
+html{
+	font-size: 16px;
+	text-size-adjust : none;
+	-webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라(신) */
+	-ms-text-size-adjust : none;  /* IE */
+	-moz-text-size-adjust : none;  /* 파이어폭스 */
+	-o-text-size-adjust : none;  /* 오페라(구)*/
+}
 /*html > body{font-size: 16px;}*/
 
 img, fieldset{border: 0;}
