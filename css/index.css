@@ -23,6 +23,9 @@ html > body *{
 	background-image: url("../img/top_main_img.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
 }
