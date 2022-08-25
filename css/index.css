@@ -80,18 +80,18 @@ html > body *{
 }
 
 .parent_name{
-	font-size: 1.3em;
+	font-size: 1em;
 	width: 29vw;
 	display: inline-block;
 }
 
 .name_center{
-	font-size: 1em;
+	font-size: 0.7em;
 	display: inline-block;
 }
 
 .we_name{
-	font-size: 1.3em;
+	font-size: 1em;
 	display: inline-block;
 }
 
@@ -117,7 +117,7 @@ html > body *{
 }
 
 .cal .text_1{
-	font-size: 4em;
+	font-size: 3em;
 	width: 100%;
 	display: block;
 	position: absolute;
@@ -230,7 +230,7 @@ html > body *{
 }
 .copy_text{
 	display: inline-block;
-	font-size: 2em;
+	font-size: 1.5em;
 	text-align: center;
 }
 .location_wrap{
@@ -240,7 +240,7 @@ html > body *{
 	width: 100%;
 }
 .location_box{
-	line-height: 2em;
+	line-height: 1.5em;
 	text-align: left;
 	font-size: 1em;
 	margin-bottom: 2.5vh;
