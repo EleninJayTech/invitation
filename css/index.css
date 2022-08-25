@@ -7,6 +7,16 @@ html > body *{
 	box-sizing: border-box;
 }
 
+.line_1{
+	width: 100%;
+	display: inline-block;
+}
+
+.line_1 img{
+	padding: 20vw 30vw;
+	width: 100%;
+}
+
 .first_open{
 	width: 100vw;
 	height: 100vh;
@@ -178,7 +188,6 @@ html > body *{
 }
 
 .cal{
-	margin: 30vw 0;
 	position: relative;
 	background: #fffaf6;
 	text-align: center;
@@ -200,7 +209,6 @@ html > body *{
 
 /* 갤러리 */
 .gallery_wrap{
-	margin: 30vw 0;
 	overflow: hidden;
 	width: 100%;
 }
@@ -287,7 +295,6 @@ html > body *{
 	overflow: hidden;
 	width: 100%;
 	text-align: center;
-	margin: 30vw 0;
 }
 .in_map{
 	width: 95%;
@@ -318,22 +325,33 @@ html > body *{
 	line-height: 1.5em;
 	text-align: left;
 	font-size: 1em;
-	margin-bottom: 2.5vh;
+	margin-bottom: 2vw;
 }
 .location_box b{
-	font-size: 1.2em;
-	padding-bottom: 1vh;
+	font-size: 1em;
+	padding-bottom: 1vw;
 	display: inline-block;
 }
 .location_box p{
 	padding-left: 1vw;
 	/*margin-bottom: 0.5vh;*/
-	font-size: 1em;
+	font-size: 0.8em;
 }
 
 .footer_wrap{
+	display: flex;
+	justify-content: center;
 	margin-top: 5vh;
 	width: 100%;
-	min-height: 30vh;
 	background: #333334;
+}
+
+.link_btn{
+	margin-top: 10vw;
+	margin-bottom: 10vw;
+	width: 30vw;
+	display: inline-block;
+}
+.link_btn img{
+	width: 100%;
 }

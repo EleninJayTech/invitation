@@ -22,7 +22,7 @@ jQuery(function($){
 		grabCursor: true,
 	});
 
-	$(".map_info_wrap").on('click', function(){
+	$(".map_info_wrap").on('click', function(e){
 		let textarea = document.createElement('textarea');
 		textarea.value = '인천 서구 봉수대로 806';                // 복사할 메시지
 		document.body.appendChild(textarea);
@@ -32,5 +32,22 @@ jQuery(function($){
 		document.body.removeChild(textarea);
 
 		alert("주소가 복사 되었습니다.");
+		e.preventDefault();
+		return false;
+	});
+
+	$(".link_btn").on('click', function(e){
+		let textarea = document.createElement('textarea');
+		textarea.value = 'https://eleninjaytech.github.io/invitation';                // 복사할 메시지
+		document.body.appendChild(textarea);
+		textarea.select();
+		textarea.setSelectionRange(0, 9999);    // For IOS
+		document.execCommand('copy');
+		document.body.removeChild(textarea);
+
+		alert("복사 되었습니다");
+
+		e.preventDefault();
+		return false;
 	});
 });
