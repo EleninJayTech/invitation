@@ -1,4 +1,6 @@
 jQuery(function($){
+	$(".wrap").animate({marginTop:'100vh'}, 500);
+
 	let el_invitation_wrap = $(".invitation_wrap");
 	let invitation_wrap_top = el_invitation_wrap.offset().top;
 

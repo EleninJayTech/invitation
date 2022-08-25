@@ -7,27 +7,77 @@ html > body *{
 	box-sizing: border-box;
 }
 
+img.first_open{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.scroll_info{
+	opacity: 0;
+	position: fixed;
+	z-index: 2;
+	right: 5vw;
+	bottom: 15vw;
+	width: 40vw;
+	height: 40vw;
+	border-radius: 50%;
+	background: #ffffff;
+
+	animation-name: fadeOut;
+	animation-duration: 2s;
+	/*animation-iteration-count: infinite;*/
+	/*animation-timing-function: linear;*/
+	/*animation-direction: alternate;*/
+}
+.scroll_info .img{
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/scroll2.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 /* 전체 영역 */
 .wrap{
 	max-width: 1024px;
 	width: 100%;
 	min-height: 1000px;
-	margin: 0 auto;
+	margin-top: 95vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	z-index: 1000;
+	position: relative;
+	background: #ffffff;
 }
 
 /* 메인 최상단 이미지 */
 .top_main_img{
 	width: 100%;
-	min-height: 80vh;
-	position: relative;
-	background-image: url("../img/top_main_img.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
+	/*min-height: 80vh;*/
+	/*position: relative;*/
+	/*background-image: url("../img/top_main_img.jpg");*/
+	/*background-repeat: no-repeat;*/
+	/*background-position: center center;*/
+	/*background-size: cover;*/
+	/*background-attachment: fixed;*/
+}
+
+.top_main_img img{
+	width: 100%;
 }
 
 .invitation_wrap{
@@ -41,7 +91,8 @@ html > body *{
 
 .main_desc_1{
 	width: 100%;
-	padding: 1vw;
+	padding: 9vw;
+	line-height: 5em;
 }
 
 .font_1{
