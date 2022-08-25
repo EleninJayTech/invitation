@@ -95,6 +95,14 @@ html > body *{
 	width: 100%;
 }
 
+.invitation_text_box{
+	width: 100%;
+}
+
+.invitation_text_box img{
+	width: 100%;
+}
+
 .main_desc_1 .main_desc{
 	font-size: 2.5em;
 }
@@ -170,8 +178,9 @@ html > body *{
 }
 
 .cal{
+	margin: 30vw 0;
 	position: relative;
-	background: #e4efe2;
+	background: #fffaf6;
 	text-align: center;
 	padding: 3vw 3vw 10vw;
 }
@@ -191,6 +200,7 @@ html > body *{
 
 /* 갤러리 */
 .gallery_wrap{
+	margin: 30vw 0;
 	overflow: hidden;
 	width: 100%;
 }
@@ -277,6 +287,7 @@ html > body *{
 	overflow: hidden;
 	width: 100%;
 	text-align: center;
+	margin: 30vw 0;
 }
 .in_map{
 	width: 95%;
