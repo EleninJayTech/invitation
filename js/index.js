@@ -1,4 +1,6 @@
 jQuery(function($){
+	Common.alertInit();
+
 	$(".wrap").animate({marginTop:'100vh'}, 500);
 
 	let el_invitation_wrap = $(".invitation_wrap");
@@ -31,7 +33,7 @@ jQuery(function($){
 		document.execCommand('copy');
 		document.body.removeChild(textarea);
 
-		alert("주소가 복사 되었습니다.");
+		Common.alert("주소가 복사 되었습니다");
 		e.preventDefault();
 		return false;
 	});

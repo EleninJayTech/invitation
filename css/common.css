@@ -1,0 +1,45 @@
+@keyframes scaleUp {
+	0% {
+		transform: scale(0.8, 0.8);
+	}
+	70%{
+		transform: scale(1.1, 1.1);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+.common_scale_up{
+	animation-name: scaleUp;
+	animation-duration: 300ms;
+}
+
+.common_alert_bg{
+	width: 100vw;
+	height: 100vh;
+	background: #000;
+	opacity: 0.7;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 20000;
+}
+
+.common_alert_wrap{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 20vh;
+	z-index: 20005;
+	font-size: 3rem;
+	text-align: center;
+}
+
+.common_alert{
+	background: #ffffff;
+	padding: 2vw 4vw;
+	display: inline-block;
+	border-radius: 0.5em;
+	transform: scale(1, 1);
+}
