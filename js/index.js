@@ -42,6 +42,9 @@ jQuery(function($){
 		let shareTitle = "";
 		let shareText = '';
 		let shareURL = "https://eleninjaytech.github.io/invitation";
+		if( $(this).data('type') === 'new' ){
+			shareURL = "https://eleninjaytech.github.io/invitation/new.html";
+		}
 
 		// let URLPreFix = "";
 		// URLPreFix = URLPreFix + "//" + location.host;
@@ -57,7 +60,7 @@ jQuery(function($){
 				.catch((error) => console.log('Error sharing', error));
 		}else{
 			let textarea = document.createElement('textarea');
-			textarea.value = 'https://eleninjaytech.github.io/invitation';
+			textarea.value = shareURL;
 			document.body.appendChild(textarea);
 			textarea.select();
 			textarea.setSelectionRange(0, 9999);    // For IOS
