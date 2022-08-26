@@ -37,15 +37,33 @@ jQuery(function($){
 	});
 
 	$(".link_btn").on('click', function(e){
-		let textarea = document.createElement('textarea');
-		textarea.value = 'https://eleninjaytech.github.io/invitation';                // 복사할 메시지
-		document.body.appendChild(textarea);
-		textarea.select();
-		textarea.setSelectionRange(0, 9999);    // For IOS
-		document.execCommand('copy');
-		document.body.removeChild(textarea);
+		let shareTitle = "";
+		let shareText = '';
+		let shareURL = "https://eleninjaytech.github.io/invitation";
 
-		alert("복사 되었습니다");
+		// let URLPreFix = "";
+		// URLPreFix = URLPreFix + "//" + location.host;
+		// let shareURL = URLPreFix + contentURL;
+
+		if (navigator.share){
+			navigator.share({
+				title: shareTitle,
+				text: shareText,
+				url: shareURL,
+			})
+				.then(() => console.log('Successful share'))
+				.catch((error) => console.log('Error sharing', error));
+		}else{
+			let textarea = document.createElement('textarea');
+			textarea.value = 'https://eleninjaytech.github.io/invitation';
+			document.body.appendChild(textarea);
+			textarea.select();
+			textarea.setSelectionRange(0, 9999);    // For IOS
+			document.execCommand('copy');
+			document.body.removeChild(textarea);
+
+			alert("URL이 복사 되었습니다");
+		}
 
 		e.preventDefault();
 		return false;
