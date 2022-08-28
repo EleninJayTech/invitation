@@ -17,6 +17,8 @@
 	<script defer src="./js/common.js?v=29"></script>
 	<script defer src="./js/index.js?v=29"></script>
 	<script defer src="./js/swiper-bundle.min.js"></script>
+
+	<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
 <body>
 	<div class="first_open">
@@ -187,6 +189,26 @@
 						<a class="link_btn" href="#">
 							<img src="./img/linkcopy_btn.png?v=29" alt="">
 						</a>
+
+						<a id="kakaotalk-sharing-btn" href="javascript:shareMessage()">
+							<img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png" alt="카카오톡 공유 보내기 버튼"/>
+						</a>
+						<script type="text/javascript">
+							Kakao.init('0833edef80e95997fef5dc31428b7439');
+							Kakao.isInitialized();
+
+							function shareMessage() {
+								Kakao.Share.sendCustom({
+									templateId: 82107,
+									templateArgs: {
+										title: '우리의 새로운 시작을 축복해주세요',
+										description:
+											'2022. 11. 19. 토요일 저녁 6:30\n' +
+											'인천 아시아드웨딩컨벤션 브릴리에홀',
+									},
+								})
+							}
+						</script>
 					</div>
 				</div>
 			</div>

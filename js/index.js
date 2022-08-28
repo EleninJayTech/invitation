@@ -89,6 +89,13 @@ jQuery(function($){
 		return false;
 	});
 
+	$(".phone_icon").on('click', function(e){
+		let _tel = $(this).attr('href');
+		document.location.href = _tel;
+	});
+
+	// 템플릿 ID 82107
+
 	// init 체크
 	// if (!Kakao.isInitialized()) {
 	// 	Kakao.init('0833edef80e95997fef5dc31428b7439');
