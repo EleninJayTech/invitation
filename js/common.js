@@ -4,7 +4,7 @@ Common = {
 		let _html = '';
 		_html += "<div class='common_alert_bg display_none'></div>";
 		_html += "" +
-			"<div class='common_alert_wrap font_1 display_none'>" +
+			"<div class='common_alert_wrap display_none'>" +
 				"<div class='common_alert'>" +
 				"</div>" +
 			"</div>";

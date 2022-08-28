@@ -67,8 +67,23 @@ jQuery(function($){
 			document.execCommand('copy');
 			document.body.removeChild(textarea);
 
-			alert("URL이 복사 되었습니다");
+			Common.alert("URL이 복사 되었습니다");
 		}
+
+		e.preventDefault();
+		return false;
+	});
+
+	$(".copy_cash").on('click', function(e){
+		let textarea = document.createElement('textarea');
+		textarea.value = '22304674801023';
+		document.body.appendChild(textarea);
+		textarea.select();
+		textarea.setSelectionRange(0, 9999);    // For IOS
+		document.execCommand('copy');
+		document.body.removeChild(textarea);
+
+		Common.alert("계좌번호가 복사 되었습니다");
 
 		e.preventDefault();
 		return false;
