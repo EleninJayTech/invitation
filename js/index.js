@@ -93,4 +93,19 @@ jQuery(function($){
 		let _tel = $(this).attr('href');
 		document.location.href = _tel;
 	});
+
+	Kakao.init('0833edef80e95997fef5dc31428b7439');
+	Kakao.isInitialized();
+	console.log(Kakao);
+	$("#kakaotalk-sharing-btn").on('click', function(e){
+		Kakao.Share.sendCustom({
+			templateId: 82107,
+			templateArgs: {
+				title: '우리의 새로운 시작을 축복해주세요',
+				description:
+					'2022. 11. 19. 토요일 저녁 6:30\n' +
+					'인천 아시아드웨딩컨벤션 브릴리에홀',
+			},
+		})
+	});
 });
