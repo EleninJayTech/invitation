@@ -83,7 +83,22 @@ jQuery(function($){
 		document.execCommand('copy');
 		document.body.removeChild(textarea);
 
-		Common.alert("계좌번호가 복사 되었습니다");
+		Common.alert("기업은행 김동인<br>223-046748-01-023<br>계좌번호가 복사 되었습니다");
+
+		e.preventDefault();
+		return false;
+	});
+
+	$(".copy_cash_2").on('click', function(e){
+		let textarea = document.createElement('textarea');
+		textarea.value = '3333086326902';
+		document.body.appendChild(textarea);
+		textarea.select();
+		textarea.setSelectionRange(0, 9999);    // For IOS
+		document.execCommand('copy');
+		document.body.removeChild(textarea);
+
+		Common.alert("카카오뱅크 정현지<br>3333-08-6326902<br>계좌번호가 복사 되었습니다");
 
 		e.preventDefault();
 		return false;
