@@ -110,6 +110,9 @@ jQuery(function($){
 					'2022. 11. 19. 토요일 저녁 6:30\n' +
 					'인천 아시아드웨딩컨벤션 브릴리에홀',
 			},
-		})
+		});
+
+		e.preventDefault();
+		return false;
 	});
 });
