@@ -34,8 +34,9 @@ jQuery(function($){
 			let el_common_alert = $(".common_alert");
 			el_common_alert.html('');
 			el_common_alert.removeClass('common_scale_up');
+
+			e.preventDefault();
+			return false;
 		}
-		e.preventDefault();
-		return false;
 	});
 });

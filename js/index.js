@@ -89,10 +89,10 @@ jQuery(function($){
 		return false;
 	});
 
-	$(".phone_icon").on('click', function(e){
-		let _tel = $(this).attr('href');
-		document.location.href = _tel;
-	});
+	// $(".phone_icon").on('click', function(e){
+	// 	let _tel = $(this).attr('href');
+	// 	document.location.href = _tel;
+	// });
 
 	Kakao.init('0833edef80e95997fef5dc31428b7439');
 	Kakao.isInitialized();
